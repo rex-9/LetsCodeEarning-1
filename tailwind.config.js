@@ -8,7 +8,7 @@ export default {
   theme: {
     colors: {
       neutral: {
-        100: '#fff',
+        100: "#fff",
       },
       primary: {
         100: "#F6CCF5",
@@ -113,7 +113,12 @@ export default {
         },
       ],
     },
-    extend: {},
+    extend: {
+      objectPosition: {
+        "desktop-banner": "35% 39%",
+        "mobile-banner": "33% 42%",
+      },
+    },
   },
   plugins: [],
 };
