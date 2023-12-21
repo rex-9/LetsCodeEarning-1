@@ -1,11 +1,4 @@
-// import aboutHeader from '../assets/img/about-header.png'
-import circle from '../assets/img/Check_circle.png'
-import AboutCard from '../components/CardAbout'
-import CircleList from '../components/CircleList'
-import doctor from '../assets/img/doctor.png'
-import doctor1 from '../assets/img/doctor1.png'
-import doctor2 from '../assets/img/doctor2.png'
-// import Vector from '../assets/img/Vector.png'
+
 
 const About = () => {
   return (
@@ -99,9 +92,6 @@ const About = () => {
 
         </div>
       </section>
-
-      
-
     </div>
   )
 }
