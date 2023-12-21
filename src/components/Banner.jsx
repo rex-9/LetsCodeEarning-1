@@ -17,7 +17,7 @@ const Banner = ({ heading, subheading, img, alt }) => {
       <img
         src={img}
         alt={alt}
-        className="h-full w-full object-cover object-mobile-banner md:object-desktop-banner"
+        className="h-16 md:h-44 w-full object-cover object-mobile-banner md:object-desktop-banner"
       />
     </div>
   );

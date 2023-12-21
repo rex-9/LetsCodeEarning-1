@@ -2,13 +2,13 @@ import {HomeServices2,Doctor1,Doctor2,Doctor3,Check} from '../assets'
 import Banner from '../components/Banner'
 import CircleList from '../components/CircleList'
 import AboutCard from '../components/CardAbout'
-import Navbar from '../components/Navbar'
+
 const About = () => {
   return (
     <div className="font-['NunitoSans']">
-      <Navbar />
 
-      <Banner heading="About" subheading="Hopital Prive Autel D’elie" img={HomeServices2} alt="banner photo for about us page" />
+
+      <Banner heading="About" subheading="Hopital Prive Autel D’elie" img={HomeServices2} alt="banner photo for about us page"  />
 
        <article className='pb-5 pt-8 px-6 text-body-text-1 '>
           <section>
@@ -66,22 +66,21 @@ const About = () => {
 
        </article>
 
-      <section className='bg-secondary-600 text-[#fff]'>
+      <section className='bg-secondary-600 text-[#fff] relative z-10 '>
         <div className="w-full  relative bg-cover bg-center lg:py-13 xl:py-14 md:py-7 py-6 ">
-          <div className="max-w-xs md:max-w-md mx-auto text-center h-full relative z-10 ">
+          <div className="max-w-xs md:max-w-md mx-auto text-center h-full ">
             <h2 className="font-semibold  text-medium  md:text-header-2">Services We Offer </h2>
-            <p className='pt-3 pb-4 text-body-text-1 md:text-header-1'>
+            <p className='pt-3 pb-4 md:pt-6 text-body-text-1 md:text-header-1'>
               Our team is qualified and committed to providing a high-quality service to help you
               navigate your health through different life stages and health challenges.
             </p>
             <span className='text-body-text-2 md:text-header-1'>This may include:</span>
-          </div>
-          <p className='absolute -top-full left-auto w-screen h-auto rounded-full transform rotate-90  bg-secondary-700 '></p>
-
+         </div>
+         
         </div>
-      
-           <CircleList></CircleList>
-        
+        <div className='absolute  top-0 w-full h-1/4 circle  bg-secondary-700 -z-10'></div>
+ 
+           <CircleList></CircleList> 
       </section>
 
       <section className='px-6 pb-14 bg-[#f2f2f2] md:px-28'>
