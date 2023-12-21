@@ -9,7 +9,7 @@ export default {
     colors: {
       neutral: {
         100: "#fff",
-        900: '#000',
+        900: "#000",
       },
       primary: {
         100: "#F6CCF5",
@@ -118,6 +118,12 @@ export default {
       objectPosition: {
         "desktop-banner": "35% 39%",
         "mobile-banner": "33% 42%",
+      },
+      backgroundImage: {
+        "hero-pattern":
+          "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/home-photo-1.png')",
+        "footer-pattern":
+          "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/footer.png')",
       },
     },
   },
