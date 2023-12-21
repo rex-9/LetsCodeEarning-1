@@ -10,3 +10,18 @@ export { default as HamburgerIcon } from './svg/hamburger.svg?react';
 export { default as TiktokIcon } from './svg/tiktok.svg?react';
 export { default as FacebookIcon } from './svg/facebook.svg?react';
 export { default as WhatsappIcon } from './svg/whatsapp.svg?react';
+
+
+export { default as Doctor1 } from './img/about-photo-1.png' ;
+export { default as Doctor2 } from './img/about-photo-2.png' ;
+export { default as Doctor3 } from './img/about-photo-3.png' ;
+export { default as Check } from './svg/checkbox-filled.svg' ;
+
+
+
+
+
+
+
+
+

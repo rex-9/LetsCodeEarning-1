@@ -1,8 +1,14 @@
-
-
+import {HomeServices2,Doctor1,Doctor2,Doctor3,Check} from '../assets'
+import Banner from '../components/Banner'
+import CircleList from '../components/CircleList'
+import AboutCard from '../components/CardAbout'
+import Navbar from '../components/Navbar'
 const About = () => {
   return (
     <div className="font-['NunitoSans']">
+      <Navbar />
+
+      <Banner heading="About" subheading="Hopital Prive Autel D’elie" img={HomeServices2} alt="banner photo for about us page" />
 
        <article className='pb-5 pt-8 px-6 text-body-text-1 '>
           <section>
@@ -30,15 +36,15 @@ const About = () => {
           <div className="">
               <ul>
                   <li className='flex max-w-[200px]'>
-                    <img src={circle} alt="" className='h-full max-w-[20px] ' />
+                    <img src={Check} alt="" className='h-full max-w-[20px] ' />
                     <p className='ps-2 '>Stimulation Ovarienne</p>
                   </li>
                   <li className='flex pt-6 max-w-[200px] '>
-                    <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                    <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                   </li>
                   <li className='flex pt-6 max-w-[200px] '>
-                    <img src={circle} alt="" className=' h-full max-w-[20px]'  />
+                    <img src={Check} alt="" className=' h-full max-w-[20px]'  />
                     <p className='ps-2 '>Don D’ovocytes</p>
                 </li>
               </ul>
@@ -46,11 +52,11 @@ const About = () => {
           <div className="">
               <ul>
                   <li className='flex max-w-[200px]'>
-                    <img src={circle} alt="" className=' h-full max-w-[20px]'  />
+                    <img src={Check} alt="" className=' h-full max-w-[20px]'  />
                     <p className='ps-2 '>Don De Sperme</p>
                   </li>
                   <li className='flex pt-6 max-w-[200px]'>
-                      <img src={circle} alt="" className=' h-full max-w-[20px]'  />
+                      <img src={Check} alt="" className=' h-full max-w-[20px]'  />
                       <p className='ps-2'>Don D’ovocytes</p>
                   </li>
                 </ul>
@@ -86,9 +92,9 @@ const About = () => {
             </p>   
           </div> 
           <div className="grid lg:grid-cols-3 gap-10">
-            <AboutCard imgSrc={doctor} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
-            <AboutCard imgSrc={doctor1} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
-            <AboutCard imgSrc={doctor2} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
+            <AboutCard imgSrc={Doctor1} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
+            <AboutCard imgSrc={Doctor2} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
+            <AboutCard imgSrc={Doctor3} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
 
         </div>
       </section>

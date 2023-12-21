@@ -1,4 +1,4 @@
-import circle from '../assets/img/Check_circle.png'
+import {Check} from '../assets' 
 
 const CircleList = () => {
   return (
@@ -7,31 +7,31 @@ const CircleList = () => {
         <div className="ms-auto">
             <ul className=''>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] invisible md:visible '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
             </ul>
@@ -39,39 +39,39 @@ const CircleList = () => {
         <div className="me-auto">
             <ul>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] '>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] visible md:invisible'>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
                 <li className='flex pt-6 max-w-[250px] visible md:invisible'>
-                  <img src={circle} alt="" className=' h-full max-w-[20px] '  />
+                  <img src={Check} alt="" className=' h-full max-w-[20px] '  />
                   <p className='ps-2 '>Insemination Intra Uterine</p>
                 </li>
             </ul>
