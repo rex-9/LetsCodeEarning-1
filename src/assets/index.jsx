@@ -16,6 +16,7 @@ export { default as Doctor1 } from './img/about-photo-1.png' ;
 export { default as Doctor2 } from './img/about-photo-2.png' ;
 export { default as Doctor3 } from './img/about-photo-3.png' ;
 export { default as Check } from './svg/checkbox-filled.svg' ;
+export { default as Arrow } from './svg/arrow-right.svg'
 
 
 
