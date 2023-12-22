@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Appointment";
 
-function App() {
+const App = () => {
   return (
     <>
       <BrowserRouter>
