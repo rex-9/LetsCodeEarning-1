@@ -1,9 +1,12 @@
-/** @format */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .circle{
+        border-radius:0 0 50% 50%/0 0 100% 100%;
+    }
+}
 @layer base {
   @font-face {
     font-family: "Schadow BT";
