@@ -1,17 +1,16 @@
-import {HomeServices2,Doctor1,Doctor2,Doctor3,Check} from '../assets'
+import {HomeServices2,Doctor1,Doctor2,Doctor3}  from '../assets'
 import Banner from '../components/Banner'
 import CircleList from '../components/CircleList'
 import AboutCard from '../components/CardAbout'
 import Button from '../components/Button'
+import LabTest from './LabTest'
+import Circle from '../components/Circle'
 
 const About = () => {
   return (
     <div className="font-['NunitoSans']">
-
-    
-
-      <Banner heading="About" subheading="Hopital Prive Autel D’elie" img={HomeServices2} alt="banner photo for about us page" className="mt-36"   />
-       <article className='pb-5 pt-8 px-6 text-body-text-1 '>
+      <Banner heading="About" subheading="Hopital Prive Autel D’elie" img={HomeServices2} alt="banner photo for about us page" />
+       <article className='pb-16 pt-8 px-6 text-body-text-1 '>
           <section>
             
             <h2 className='text-secondary-600  font-bold text-medium md:text-header-4'>
@@ -34,70 +33,58 @@ const About = () => {
           </section>
 
           <section className='grid grid-cols-2 pt-6 gap-8 pb-10 text-body-text-1 md:text-header-2'>
-          <div className="">
+            <div className="">
               <ul>
-                  <li className='flex max-w-[200px]'>
-                    <img src={Check} alt="" className='h-full max-w-[20px] ' />
-                    <p className='ps-2 '>Stimulation Ovarienne</p>
-                  </li>
-                  <li className='flex pt-6 max-w-[200px] '>
-                    <img src={Check} alt="" className=' h-full max-w-[20px] '  />
-                  <p className='ps-2 '>Insemination Intra Uterine</p>
-                  </li>
-                  <li className='flex pt-6 max-w-[200px] '>
-                    <img src={Check} alt="" className=' h-full max-w-[20px]'  />
-                    <p className='ps-2 '>Don D’ovocytes</p>
-                </li>
+                  <Circle name={"Stimulation Ovarienne"}></Circle>
+                  <Circle name={"Stimulation Ovarienne"}></Circle>
+                  <Circle name={"Stimulation Ovarienne"}></Circle>                
               </ul>
-          </div>
-          <div className="">
-              <ul>
-                  <li className='flex max-w-[200px]'>
-                    <img src={Check} alt="" className=' h-full max-w-[20px]'  />
-                    <p className='ps-2 '>Don De Sperme</p>
-                  </li>
-                  <li className='flex pt-6 max-w-[200px]'>
-                      <img src={Check} alt="" className=' h-full max-w-[20px]'  />
-                      <p className='ps-2'>Don D’ovocytes</p>
-                  </li>
-                </ul>
             </div>
-           
+            <div className="">
+              <ul>
+                  <Circle name={"Stimulation Ovarienne"}></Circle>                
+                  <Circle name={"Stimulation Ovarienne"}></Circle>                
+                 
+              </ul>
+            </div>         
           </section>
-          <Button variant={'default'}>Book an appoinment</Button>
+
+          <div className="text-center md:text-left">
+           <Button variant={'default'}>Book an appoinment</Button>
+          </div>
        </article>
 
       <section className='bg-secondary-600 text-[#fff] relative z-10 '>
-        <div className="w-full  relative bg-cover bg-center md:py-7 py-6 ">
-          <div className="max-w-xs md:max-w-md mx-auto text-center h-full gap-6 ">
+       
+          <div className="max-w-md mx-auto text-center md:py-4 pt-6 relative">
             <h2 className="font-semibold  text-medium  md:text-header-2">Services We Offer </h2>
-            <p className=' md:pt-6 md:pb-6 text-body-text-1 md:text-header-1'>
+            <p className='w-2/3 md:w-full mx-auto md:pt-6 pt-3 pb-4 text-body-text-1 md:text-header-1'>
               Our team is qualified and committed to providing a high-quality service to help you
               navigate your health through different life stages and health challenges.
             </p>
-            <span className='text-body-text-2 md:text-header-1'>This may include:</span>
-         </div>
-         
-        </div>
+            <span className='text-body-text-2 md:pt-6 md:text-header-1'>This may include:</span>
+          </div>
+ 
         <div className='absolute  top-0 w-full h-1/4 circle  bg-secondary-700 -z-10'></div>
  
-           <CircleList></CircleList> 
+           <CircleList></CircleList>
       </section>
 
-      <section className='px-6 pb-14 bg-[#f2f2f2] md:px-28'>
-         <div className="text-center  w-full px-5 pt-8 md:py-20">
+      <section className='px-6 pb-14 md:pb-24 bg-[#f2f2f2] md:px-28'>
+         <div className="text-center   mx-auto py-8 md:py-20">
            <h2 className='text-medium md:text-header-4 text-secondary-600 font-semibold'>Meet Our Qualified Doctors</h2>
-            <p className='pt-4 pb-8 max-w-3xl m-auto text-body-text-1 md:text-header-1'> 
+            <p className='pt-4 max-w-[327px]  md:max-w-4xl m-auto text-body-text-1 md:text-header-1'> 
               We are passionate about helping you achieve your goals to maximize your lifestyle choices and improve your health and wellbeing. We are committed to providing a high quality service to assist you 
             </p>   
           </div> 
-          <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 gap-6 md:gap-16 xl:gap-36">
             <AboutCard imgSrc={Doctor1} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
             <AboutCard imgSrc={Doctor2} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
             <AboutCard imgSrc={Doctor3} imgAlt="Dr Tabitha Tan" name="Dr Tabitha Tan" job="Surgical department" />
 
         </div>
       </section>
+      <LabTest></LabTest>
     </div>
   )
 }
