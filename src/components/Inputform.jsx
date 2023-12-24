@@ -20,8 +20,8 @@ const Inputform = () => {
         console.log(details);
     }
   return (
-      <div>
-         <form className=' p-14' >
+      <div className='flex'>
+         <form className='ms-auto me-auto md:p-14'  onSubmit={handleSubmit}  >
               <div className=' flex'>
                   <h3 className=' text-body-text-1 font-normal leading-8'>Name</h3>
                  <img src={star} alt="star"  className='w-auto h-3 my-2 ms-2'/>
@@ -40,7 +40,7 @@ const Inputform = () => {
               <h3 className=' text-body-text-1 font-normal leading-8'>Message</h3>
               <textarea type="text" name='message' className='border rounded-lg w-80  h-32 ps-2' onChange={handleChange} />  
               <div>
-                  <button type='submit' onSubmit={handleSubmit} className='bg-secondary-700 text-neutral-100 w-80 p-2 rounded-lg my-3'>Send</button>
+                  <button type='submit'className='bg-secondary-700 text-neutral-100 w-80 p-2 rounded-lg my-3'>Send</button>
               </div>
           </form>
      </div>

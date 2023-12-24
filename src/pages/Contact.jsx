@@ -1,39 +1,17 @@
-import img from '../assets/img/Contact-img.jpg'
 import bar from '../assets/img/bar.png'
 import bar1 from '../assets/img/bar1.png'
+import Address from '../components/Address'
 import Button from '../components/Button'
+import Inputform from '../components/Inputform'
 const Contact = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 h-20 md:h-24">
-        <div className="flex flex-col bg-secondary-800 text-[#fff] py-2  ps-8 h-1/2 md:h-full">
-          <i className='text-primary-600 font-NunitoSans'>Lets Talk</i>
-          <span className=' font-SchadowBT'>Contact </span>
-        </div>
-        <div>
-          <img src={img} alt="" className="w-full h-1/2 object-cover
-                 md:h-24"/>
-        </div>
-      </div>
       <div className=' py-4'>
         <h1 className=' text-secondary-700 font-NunitoSans ps-5 font-bold text-medium'>Medical Laboratory Test</h1>
         <p className=' ps-5 py-2 font-NunitoSans text-body-text-1 pe-5'>Unlock the Miracle of Life: Discover Our Leading IVF Services for Your Journey to Parenthood</p>
       </div>
       <div>
-        <ul>
-          <li className='flex max-w-[200px] '>
-            <img src={circle} alt="" className='h-full max-w-[20px] ' />
-            <p className='ps-2 '>Stimulation Ovarienne</p>
-          </li>
-          <li className='flex pt-6 max-w-[200px] '>
-            <img src={circle} alt="" className=' h-full max-w-[20px] ' />
-            <p className='ps-2 '>Insemination Intra Uterine</p>
-          </li>
-          <li className='flex pt-6 max-w-[200px] '>
-            <img src={circle} alt="" className=' h-full max-w-[20px]' />
-            <p className='ps-2 '>Don D’ovocytes</p>
-          </li>
-        </ul>
+     
       </div>
 
       <div className='flex'>
@@ -72,18 +50,26 @@ const Contact = () => {
           <Button> Book a lab test appointment</Button>
         </div>
       </div>
-
       {/* form section */}
-      <div className=''>
-        <div className=' flex'>
-          <h1 className=' text-secondary-600 font-semibold text-header-1 font-NunitoSans ms-auto me-auto py-5'>Get in touch with us</h1>
+      <div className='flex gap-1 mt-40 font-NunitoSans flex-col md:flex-row'>
+        <div className='md:w-1/2'>
+          <div className='md:ps-60 pt-20 ps-8 pe-8'>
+            <h1 className=' text-secondary-600 font-bold md:text-header-4 text-header-3'>Get in touch with us</h1>
+            <p className='pt-8 md:text-header-1 font-medium'>We are always happy to hear from you. Please feel free to use this form to contact us with any questions or concerns you may have.</p>
+          <p className='pt-8 md:text-header-1 font-medium'>Our team is ready and available to help answer your questions and address your needs as quickly as possible. If we can’t handle it, we will find someone who can!</p>
+          </div>
         </div>
-        <div className=' flex '>
-          <p className=' font-NunitoSans ms-auto me-auto'>We are always happy to hear from you. Please feel free to use this form to contact us with any questions or concerns you may have.</p>
+
+        <div className='md:w-1/2 mt-3'>
+          <Inputform></Inputform>
         </div>
+      </div>
+      <div className='my-3'>
+        <Address></Address>
       </div>
     </div>
   )
 }
 
 export default Contact
+

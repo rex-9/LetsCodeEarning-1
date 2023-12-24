@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { cva } from "class-variance-authority";
-import { cn } from "../libs/utils";
+import { cn } from "../libs/library";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-[0.375rem] text-medium font-NunitoSans disabled:opacity-50 disabled:pointer-events-none",
@@ -24,9 +24,9 @@ const buttonVariants = cva(
   },
 );
 
-const Button = ({ children, variant, size, ...props }) => {
+const Button = ({ children, variant, size, className, ...props }) => {
   return (
-    <button className={cn(buttonVariants({ variant, size }))} {...props}>
+    <button className={cn(buttonVariants({ variant, size, className}))} {...props}>
       {children}
     </button>
   );
