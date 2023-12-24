@@ -3,9 +3,11 @@ import bar1 from '../assets/img/bar1.png'
 import Address from '../components/Address'
 import Button from '../components/Button'
 import Inputform from '../components/Inputform'
+import Banner from '../components/Banner'
 const Contact = () => {
   return (
     <div>
+      <Banner heading='Lets talk' subheading='Contact'></Banner>
       <div className=' py-4'>
         <h1 className=' text-secondary-700 font-NunitoSans ps-5 font-bold text-medium'>Medical Laboratory Test</h1>
         <p className=' ps-5 py-2 font-NunitoSans text-body-text-1 pe-5'>Unlock the Miracle of Life: Discover Our Leading IVF Services for Your Journey to Parenthood</p>
