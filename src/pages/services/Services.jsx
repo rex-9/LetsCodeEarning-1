@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div>Welcome to Services</div>
+    <main className="pt-main">Welcome to Services</main>
   )
 }
 

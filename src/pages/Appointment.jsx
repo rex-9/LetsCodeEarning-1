@@ -1,6 +1,8 @@
 const Appointment = () => {
   return (
-    <div>Welcome to Appointment</div>
+    <main className="pt-main">
+      
+    </main>
   )
 }
 
