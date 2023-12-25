@@ -92,7 +92,7 @@ export default {
           letterSpacing: "0.015rem",
         },
       ],
-      'medium': [
+      medium: [
         "1.0625rem",
         {
           lineHeight: "normal",
@@ -113,7 +113,7 @@ export default {
           letterSpacing: "0.00525rem",
         },
       ],
-      "small": [
+      small: [
         "0.625rem",
         {
           lineHeight: "normal",
@@ -123,7 +123,7 @@ export default {
     },
     extend: {
       padding: {
-        'main': '108px'
+        main: "108px",
       },
       objectPosition: {
         "desktop-banner": "35% 39%",
@@ -134,8 +134,6 @@ export default {
           "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/home-photo-1.png')",
         "footer-pattern":
           "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/footer.png')",
-        "img-deco-top": "url('/src/assets/svg/img-deco-top.svg')",
-        "img-deco-bottom": "url('/src/assets/svg/img-deco-bottom.svg')",
       },
     },
   },

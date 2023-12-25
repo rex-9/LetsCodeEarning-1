@@ -16,7 +16,7 @@ function CustomNavLink({ children, onClick = null, to, className }) {
         to={to}
         className={({ isActive }) =>
           [
-            "flex items-center gap-2",
+            "inline-flex items-center gap-2",
             isActive ? activeClasses : inActiveClasses,
           ].join(" " + className)
         }

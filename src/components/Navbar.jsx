@@ -15,12 +15,12 @@ const Navbar = () => {
   const handleMobileNav = () => setMobileNavOpen((prev) => !prev);
   return (
     <nav>
-      <div className="mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between bg-secondary-700 py-3 md:px-8 md:py-2">
-        <div className="flex flex-col text-small-text text-neutral-100 md:flex-row md:gap-4 md:text-medium">
+      <div className="mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between bg-secondary-700 py-3 px-6 md:px-8 md:py-2">
+        <div className="flex flex-col text-small text-neutral-100 md:flex-row md:gap-4 gap-2 md:text-medium">
           <p className="">Email: info@cae.com</p>
           <p>Phone Number: +228 92 50 78 22</p>
         </div>
-        <ul className="flex items-center gap-6 font-medium rtl:space-x-reverse">
+        <ul className="flex items-center sm:gap-4 md:gap-6 gap-4 font-medium rtl:space-x-reverse">
           <CustomNavLink to="#">
             <WhatsappIcon />
           </CustomNavLink>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </CustomNavLink>
 
         <div className="flex space-x-3 rtl:space-x-reverse md:order-2 md:space-x-0">
-          <CustomNavLink to="/appointment" className="hidden md:flex">
+          <CustomNavLink to="/booking/lab-test" className="hidden md:flex">
             <Button>Appointment</Button>
           </CustomNavLink>
           <Button

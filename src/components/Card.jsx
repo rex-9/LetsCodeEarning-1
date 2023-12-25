@@ -6,7 +6,7 @@ import CustomNavLink from "../components/CustomNavLink";
 
 function Card({ intent, img, title, body, link, imgType = null }) {
   const cardVariants = cva(
-    "flex flex-col items-start bg-neutral-100 w-80 md:w-96",
+    "flex flex-col items-start bg-neutral-100 shadow-lg",
     {
       variants: {
         intent: {
@@ -27,7 +27,7 @@ function Card({ intent, img, title, body, link, imgType = null }) {
           <img
             src={img}
             alt=""
-            className="h-10 w-10 rounded-full md:h-12 md:w-12 "
+            className="rounded-full h-10 w-10 md:h-12 md:w-12 "
           />
         ) : (
           <img src={img} alt="" className="rounded-lg" />

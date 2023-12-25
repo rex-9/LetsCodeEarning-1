@@ -1,22 +1,32 @@
 /* eslint-disable react/prop-types */
-import { ImageDecoTopIcon, ImageDecoDownIcon } from '../assets';
+import { ImageDeco } from "../assets";
 
-function HighlightImage({ img, alt, style }) {
+function HighlightImage({
+  img,
+  alt,
+  top = null,
+  right = null,
+  bottom = null,
+  className = null,
+}) {
   return (
-    <div className='relative order-1'>
-      {style === 'top' && (
-        <ImageDecoTopIcon className='absolute -left-4 -top-4 h-auto w-8 md:-left-10 md:-top-10 md:w-20' />
-      )}
-      {style === 'bottom' && (
-        <ImageDecoDownIcon className='absolute -bottom-4 -right-4 h-auto w-8 md:-bottom-10 md:-right-10 md:w-20' />
-      )}
-      {style === 'both' && (
-        <>
-          <ImageDecoTopIcon className='absolute -left-4 -top-4 h-auto w-8 md:-left-10 md:-top-10 md:w-20' />
-          <ImageDecoDownIcon className='absolute -bottom-4 -right-4 h-auto w-8 md:-bottom-10 md:-right-10 md:w-20' />
-        </>
-      )}
-     <img src={img} alt={alt} />
+    <div className={"basis-full" + " " + className}>
+      <div className="relative max-h-fit w-fit">
+        <img
+          src={img}
+          alt={alt}
+          className="aspect-[1.3/1] w-full md:w-[26rem] lg:w-[30rem]"
+        />
+        {top && (
+          <ImageDeco className="absolute -left-4 -top-4 block h-auto w-8 lg:-left-10 lg:-top-10 lg:w-20 " />
+        )}
+        {right && (
+          <ImageDeco className="absolute -right-4 -top-4 block h-auto w-8 rotate-90 lg:-right-10 lg:-top-10 lg:w-20" />
+        )}
+        {bottom && (
+          <ImageDeco className="absolute -bottom-4 -right-4 block h-auto w-8 rotate-180 lg:-bottom-10 lg:-right-10 lg:w-20" />
+        )}
+      </div>
     </div>
   );
 }
