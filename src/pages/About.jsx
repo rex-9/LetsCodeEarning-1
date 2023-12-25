@@ -3,11 +3,10 @@ import Banner from '../components/Banner'
 import CircleList from '../components/CircleList'
 import AboutCard from '../components/CardAbout'
 import Button from '../components/Button'
-
 import Circle from '../components/Circle'
 import ImageDecoration from '../components/ImageDecoration'
 import FooterDiv from '../components/FooterDiv'
-import ServiceList2 from '../components/ServiceList2'
+
 
 
 const About = () => {
@@ -100,8 +99,7 @@ const About = () => {
       </section>
 
       <FooterDiv></FooterDiv>
-      <ServiceList2></ServiceList2>
-      </div>
+     </div>
   )
 }
 

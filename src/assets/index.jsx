@@ -21,7 +21,7 @@ export { default as Lab } from './img/contact-photo-1.png';
 export {default as Phonecalling } from './svg/phone-calling.svg?react'
 
 export {default as Email } from './svg/email.svg';
-
+export { default as Pseudo} from './img/pseudo.png';
 
 
 
