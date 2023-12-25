@@ -36,6 +36,8 @@ export default {
         900: "#021D39",
         1000: "#011326",
         1100: "#010B17",
+        1200:"#132646",
+        1300:"#002F60"
       },
     },
     fontFamily: {
@@ -124,6 +126,8 @@ export default {
           "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/home-photo-1.png')",
         "footer-pattern":
           "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/footer.png')",
+        "img-deco-top": "url('/src/assets/svg/img-deco-top.svg')",
+        "img-deco-bottom": "url('/src/assets/svg/img-deco-bottom.svg')",
       },
     },
   },

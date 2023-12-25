@@ -18,7 +18,9 @@ export { default as Doctor3 } from './img/about-photo-3.png' ;
 export { default as Check } from './svg/checkbox-filled.svg' ;
 export { default as Arrow } from './svg/arrow-right.svg';
 export { default as Lab } from './img/contact-photo-1.png';
-export {default as Phonecalling } from './svg/phone-calling.svg'
+export {default as Phonecalling } from './svg/phone-calling.svg?react'
+
+export {default as Email } from './svg/email.svg';
 
 
 
@@ -29,3 +31,6 @@ export {default as Phonecalling } from './svg/phone-calling.svg'
 
 
 
+export { default as LocationIcon } from './svg/location.svg?react';
+export { default as ImageDecoTopIcon } from './svg/img-deco-top.svg?react';
+export { default as ImageDecoDownIcon } from './svg/img-deco-bottom.svg?react';
