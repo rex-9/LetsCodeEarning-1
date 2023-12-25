@@ -3,10 +3,10 @@ const FooterDiv = () => {
     return (
 
     <div className='bg-secondary-1200 text-neutral-100'>
-        <div className="pt-10  md:pt-16 pb-14 px-4 sm:px-10 md:ps-20 ">
-            <div className="flex flex-col gap-7 lg:gap-18 lg:flex-row">
+        <div className="pt-10  md:pt-16 pb-14 px-4 sm:px-10 md:ps-20   lg:mx-auto w-full xl:max-w-fit">
+            <div className="flex flex-col gap-8 lg:gap-10 xl:gap-30 2xl:gap-36  lg:flex-row w-full">
 
-                <div className="grid grid-cols-2 gap-20 lg:flex lg:gap-10">
+                <div className=" grid grid-cols-2 gap-20 lg:flex lg:gap-10 xl:gap-24 2xl:gap-32">
                     <div className="text-body-text-1 md:text-medium">
                         <img src={Brand} className='w-14 md:w-20' alt="" />
                         <p className="pt-4 md:pt-6 max-w-[150px] sm:max-w-[342px] ">
@@ -26,9 +26,9 @@ const FooterDiv = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-20 xl:gap-18 xl:ps-10   lg:flex lg:flex-row-reverse">
+                <div className=" grid grid-cols-2 gap-20 lg:gap-14 xl:gap-24 2xl:gap-32 lg:flex lg:flex-row-reverse">
 
-                   <div className="xl:ps-6">
+                   <div className="">
                         <p className="text-medium md:text-header-2 font-bold">Contact</p>
                         <div className="pt-4 md:pt-6 text-body-text-1 md:text-medium">
                             <div className="flex gap-2 items-center">
@@ -63,8 +63,8 @@ const FooterDiv = () => {
 
             </div>
         </div>
-        <div className="pb-10 text-center lg:text-left lg:px-20">
-            <hr className='max-w-6xl pb-5 opacity-50' />
+        <div className="pb-10 text-center lg:text-left lg:px-20 w-full">
+            <hr className=' pb-5 opacity-50' />
             <small className='text-small-text md:text-body-text-1 opacity-50'>CAE Copyright 2023. All Rights Reserved By CAE</small>
         </div>
     </div>
