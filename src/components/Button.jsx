@@ -16,9 +16,9 @@ const buttonVariants = cva(
         nav: "z-50 h-10 w-10 items-center justify-center focus:outline-none focus:ring-2 focus:ring-secondary-700 md:hidden ",
       },
       size: {
-        default: "md:py-3 md:px-6 md:gap-3 py-2 px-2 gap-2",
-        icon: "py-3 px-6 gap-12",
-        mobileNav: 'px-0 py-0'
+
+        default: "py-[0.625rem] px-[1.5625rem] gap-[0.625rem]",
+        icon: "md:-[0.875rem] pr-[1rem] gap-[1rem] md:pr-[1.58375rem] md:pl-[1.58188rem] md:gap-[2rem] py-[0.69rem] pl-[0.81rem]"
       },
     },
     defaultVariants: {

@@ -1,7 +1,13 @@
+import { Star } from "../../assets";
+
+Star
 const Inputbox = ({ label, type, value }) => {
   return (
     <div className='flex flex-col'>
-      <label>{label}</label>
+      <div className=" flex">
+        <label>{label}</label>
+        <span className="ms-2 mt-2"><Star></Star></span>
+      </div>
       <input
         type={type}
         value={value}

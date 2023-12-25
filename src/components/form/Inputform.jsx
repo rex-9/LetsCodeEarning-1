@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { Star } from '../../assets';
 const Inputform = () => {
   const [details, setDetails] = useState({
     name: '',
@@ -19,15 +19,11 @@ const Inputform = () => {
     console.log(details);
   };
   return (
-    <div>
-      <form className=' p-14'>
+    <div className='m-7'>
+      <form >
         <div className=' flex'>
           <h3 className=' text-body-text-1 font-normal leading-8'>Name</h3>
-          <img
-            src={''}
-            alt='star'
-            className='w-auto h-3 my-2 ms-2'
-          />
+         <span className='mt-2 ms-2'> <Star/></span>
         </div>
         <input
           type='text'
@@ -39,11 +35,7 @@ const Inputform = () => {
           <h3 className=' text-body-text-1 font-normal leading-8'>
             Email Address
           </h3>
-          <img
-            src={''}
-            alt='star'
-            className='w-auto h-3 my-2 ms-2'
-          />
+           <span className='mt-2 ms-2'> <Star/></span>
         </div>
         <input
           type='text'
@@ -55,11 +47,7 @@ const Inputform = () => {
           <h3 className=' text-body-text-1 font-normal leading-8'>
             Phone Number
           </h3>
-          <img
-            src={''}
-            alt='star'
-            className='w-auto h-3 my-2 ms-2'
-          />
+           <span className='mt-2 ms-2'> <Star/></span>
         </div>
         <input
           type='text'

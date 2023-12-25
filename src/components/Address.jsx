@@ -4,10 +4,10 @@ import Card from '../components/Card'
 const Address = () => {
   return (
     <div className='grid grid-flow-col mb-3'>
-      <div className='bg-white rounded-lg shadow-lg p-4 w-[13rem] md:w-auto'>
-        <div className='w-[8.375rem] h-[15rem] md:w-auto md:h:auto'>
-       <h1 className='md:ms-40  mt-10 font-NunitoSans text-medium md:text-header-2 text-secondary-700 font-bold'>HOPITAL PRIVE AUTE D’ELIE</h1>
-      <div className='md:ms-40'>
+      <div className='bg-white rounded-lg shadow-lg ps-2 md:w-auto'>
+        <div className='w-full md:w-auto md:h:auto'>
+       <h1 className='lg:ms-40 ms-4 pe-3  mt-10 font-NunitoSans text-medium md:text-header-2 text-secondary-700 font-bold'>HOPITAL PRIVE AUTE D’ELIE</h1>
+      <div className='lg:ms-40 ms-4'>
             <div className='flex md:pt-6 pt-4'>
               <LocationIcon/>
           <span className='ps-1'>BP 6176 Lome-TOGO</span>
@@ -30,8 +30,8 @@ const Address = () => {
      </div>
        </div>
       <div className='pt-4'>
-        <div>
-         <img src={ContactMap} alt="" className=' md:w-[41.9375rem] md:h-80 w-[14.75rem] h-[18.5rem]' />
+        <div className=' md:w-auto'>
+         <img src={ContactMap} alt="" className=' md:w-[41.9375rem] md:h-80  h-[18.5rem]' />
        </div>
       </div>
     </div>
