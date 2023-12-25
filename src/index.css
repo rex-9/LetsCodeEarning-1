@@ -1,8 +1,7 @@
-/** @format */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   @font-face {
@@ -56,5 +55,8 @@
   }
   .checklabel {
     color: rgba(105, 114, 125, 1);
+  }
+   .circle{
+      border-radius:0 0 50% 50%/0 0 100% 100%;
   }
 }

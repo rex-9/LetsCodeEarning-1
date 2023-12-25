@@ -1,14 +1,22 @@
-import ImageDecoration from "../components/ImageDecoration";
-import { HomeHero} from "../assets";
+import { HomeServices1 } from "../assets";
+import HighlighSection from "../components/HighlighSection";
+import HighlightImage from "../components/HighlightImage";
+import HighlightText from "../components/HighlightText";
 
 const Home = () => {
   return (
-    <div className="mt-48 ml-24">
-      <ImageDecoration style='top'>
-        <img src={HomeHero} alt="home-hero" className="object-cover aspect-video w-[34rem]" />
-      </ImageDecoration>
-    </div>
-  )
-}
+    <main className="pt-main">
+      <HighlighSection>
+        <HighlightImage img={HomeServices1} alt="home-services1" style='both' />
+        <HighlightText
+          subheading="New Service"
+          heading="Centre Fiv"
+          body="Unlock the Miracle of Life: Discover Our Leading IVF Services for Your Journey to Parenthood"
+          href="/appointment"
+        />
+      </HighlighSection>
+    </main>
+  );
+};
 
 export default Home;

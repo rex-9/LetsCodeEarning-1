@@ -3,9 +3,15 @@
 import React from 'react';
 import Checkbox from '../components/Checkbox';
 import Button from '../components/Button';
-import Inputbox from '../components/Inputbox';
+import Inputbox from '../components/form/Inputbox';
+import Banner from '../components/Banner';
+import { LabFormBanner } from '../assets';
 const Labtest = () => {
   return (
+    <div>
+      <div>
+      <Banner heading={'Book a'} subheading={'Laboratory Test'} img={LabFormBanner} />
+    </div>
     <div className=" flex flex-col items-center justify-center bg-gray-200">
       <div className="p-8 mb-4">
         <div className='flex'>
@@ -51,6 +57,7 @@ const Labtest = () => {
         </div>
       <Button className='mt-2'>Send request</Button>
     </div>
+  </div>
   );
 };
 

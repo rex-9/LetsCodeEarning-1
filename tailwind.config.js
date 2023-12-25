@@ -4,14 +4,15 @@
  */
 
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
       neutral: {
         100: "#fff",
+        200: "#ECF2FA",
+        300: "#9D9D9D",
+        400: "#5D5D5D",
+        500: "#282828",
         900: "#000",
       },
       primary: {
@@ -39,6 +40,9 @@ export default {
         900: "#021D39",
         1000: "#011326",
         1100: "#010B17",
+      },
+      custom: {
+        "meadow-green": "#4ADE80",
       },
     },
     fontFamily: {
@@ -88,28 +92,28 @@ export default {
           letterSpacing: "0.015rem",
         },
       ],
-      medium: [
+      'medium': [
         "1.0625rem",
         {
           lineHeight: "normal",
           letterSpacing: "0.01063rem",
         },
       ],
-      "body-text-1": [
+      "body-1": [
         "0.875rem",
         {
           lineHeight: "normal",
           letterSpacing: "0.00788rem",
         },
       ],
-      "body-text-2": [
+      "body-2": [
         "0.75rem",
         {
           lineHeight: "normal",
           letterSpacing: "0.00525rem",
         },
       ],
-      "small-text": [
+      "small": [
         "0.625rem",
         {
           lineHeight: "normal",
@@ -118,6 +122,9 @@ export default {
       ],
     },
     extend: {
+      padding: {
+        'main': '108px'
+      },
       objectPosition: {
         "desktop-banner": "35% 39%",
         "mobile-banner": "33% 42%",

@@ -1,13 +1,14 @@
-import bar from '../assets/img/bar.png'
-import bar1 from '../assets/img/bar1.png'
 import Address from '../components/Address'
 import Button from '../components/Button'
-import Inputform from '../components/Inputform'
+import Inputform from '../components/form/Inputform'
 import Banner from '../components/Banner'
+import { ContactBanner } from '../assets'
 const Contact = () => {
   return (
     <div>
-      <Banner heading='Lets talk' subheading='Contact'></Banner>
+      <div className='mt-26'>
+        <Banner heading={"Let's talk"} subheading={'Contact  '} img={ContactBanner}></Banner>
+    </div>
       <div className=' py-4'>
         <h1 className=' text-secondary-700 font-NunitoSans ps-5 font-bold text-medium'>Medical Laboratory Test</h1>
         <p className=' ps-5 py-2 font-NunitoSans text-body-text-1 pe-5'>Unlock the Miracle of Life: Discover Our Leading IVF Services for Your Journey to Parenthood</p>
@@ -16,39 +17,49 @@ const Contact = () => {
      
       </div>
 
-      <div className='flex'>
-        <p className='ms-auto me-auto text-secondary-600 text-medium font-NunitoSans font-bold'>Opening Hours For Our Laboratory Test</p>
+      <div className="flex">
+        <p className="me-auto ms-auto font-NunitoSans text-medium font-bold text-secondary-600">
+          Opening Hours For Our Laboratory Test
+        </p>
       </div>
-      <div className='flex'>
-        <div className='flex flex-row me-auto ms-auto py-4'>
+      <div className="flex">
+        <div className="me-auto ms-auto flex flex-row py-4">
           <span>Monday - Wednesday</span>
-          <span className='p-3'><img src={bar} alt="" /></span>
+          <span className="p-3">
+            <img src="" alt="" />
+          </span>
           <span>7:30am to 6:00pm</span>
         </div>
       </div>
-      <div className='flex'>
-        <div className='flex flex-row me-auto ms-auto py-4'>
+      <div className="flex">
+        <div className="me-auto ms-auto flex flex-row py-4">
           <span>Thursday</span>
-          <span className='p-3'><img src={bar1} alt="" /></span>
+          <span className="p-3">
+            <img src="" alt="" />
+          </span>
           <span>8:00am to 6:00pm</span>
         </div>
       </div>
-      <div className='flex'>
-        <div className='flex flex-row me-auto ms-auto py-4'>
+      <div className="flex">
+        <div className="me-auto ms-auto flex flex-row py-4">
           <span>Friday</span>
-          <span className='p-3'><img src={bar1} alt="" /></span>
+          <span className="p-3">
+            <img src="" alt="" />
+          </span>
           <span>7:30am to 4:30pm</span>
         </div>
       </div>
-      <div className='flex'>
-        <div className='flex flex-row me-auto ms-auto py-4'>
+      <div className="flex">
+        <div className="me-auto ms-auto flex flex-row py-4">
           <span>Saturday - Sunday</span>
-          <span className='p-3'><img src={bar1} alt="" /></span>
+          <span className="p-3">
+            <img src="" alt="" />
+          </span>
           <span>CLOSED</span>
         </div>
       </div>
-      <div className=' flex'>
-        <div className=' me-auto ms-auto'>
+      <div className=" flex">
+        <div className=" me-auto ms-auto">
           <Button> Book a lab test appointment</Button>
         </div>
       </div>
@@ -69,6 +80,7 @@ const Contact = () => {
       <div className='my-3'>
         <Address></Address>
       </div>
+
     </div>
   )
 }
