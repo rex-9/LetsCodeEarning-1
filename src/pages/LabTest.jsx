@@ -14,7 +14,7 @@ const LabTest = () => {
                     <p className='pt-4 pb-4 text-[14px] text-body-text-1 lg:text-header-1 text-primary-600'>Available Monday to Friday from 8:00AM to 5:00PM.</p>
                 </div>
                 <div className="lg:py-12  pb-10">
-                    <Buttonbooking variant='form'>Book for your test now</Buttonbooking>  
+                   <a href="#"> <Buttonbooking variant='form'>Book for your test now</Buttonbooking>  </a>
                 </div>       
                 <div className="flex items-center">
                     <div className="flex items-center">
