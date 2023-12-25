@@ -44,9 +44,9 @@ const FooterDiv = () => {
                                 <p className='flex flex-col sm:flex-row'>Customerservice<span>@cae.com</span></p>
                             </div>                         
                             <div className="pt-4 md:pt-5 flex gap-4">
-                                <TiktokIcon></TiktokIcon>
-                                <FacebookIcon></FacebookIcon>
-                                <WhatsappIcon></WhatsappIcon>
+                                <a href="#"><WhatsappIcon></WhatsappIcon></a>
+                                <a href="#"><FacebookIcon></FacebookIcon></a>
+                                <a href="#"><TiktokIcon></TiktokIcon></a>
                             </div>
                         </div>
                    </div>
