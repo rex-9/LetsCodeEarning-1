@@ -3,7 +3,7 @@
 
 const ServiceList = ({firstHeader,firstParagraph,secHeader,secParagraph}) => {
   return (
-    <div className="p-5">
+    <div className="">
         <div className="">
             <p className="text-medium md:text-header-1 text-secondary-600 font-bold">{firstHeader}</p>
             <p className="pt-6 md:pt-8 text-body-text-1 md:text-header-1">{firstParagraph}</p>

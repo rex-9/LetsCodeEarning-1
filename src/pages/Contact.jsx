@@ -1,6 +1,9 @@
+import ServiceListPage from "../components/ServiceListPage"
 const Contact = () => {
   return (
-    <div>Welcome to Contact</div>
+    <div>
+      <ServiceListPage></ServiceListPage>
+    </div>
   )
 }
 
