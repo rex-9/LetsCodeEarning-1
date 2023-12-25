@@ -17,8 +17,8 @@ const LabTest = () => {
                     <Buttonbooking variant='form'>Book for your test now</Buttonbooking>  
                 </div>       
                 <div className="flex items-center">
-                    <div className="flex">
-                        <img src={Phonecalling} alt="" />
+                    <div className="flex items-center">
+                        <Phonecalling></Phonecalling>
                         <div className="flex flex-col ps-4  justify-center pr-14 md:pr-20  lg:ps-6">
                             <span className='text-body-text-1 lg:text-header-3'>92507822</span>
                             <span className='text-body-text-1 lg:text-header-3'>92507822</span>

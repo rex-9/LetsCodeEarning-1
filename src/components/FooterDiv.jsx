@@ -1,4 +1,4 @@
-import { Brand,Check, TiktokIcon, FacebookIcon, WhatsappIcon } from '../assets'
+import { Brand,Phonecalling, TiktokIcon, FacebookIcon, WhatsappIcon} from '../assets'
 const FooterDiv = () => {
     return (
 
@@ -31,19 +31,19 @@ const FooterDiv = () => {
                    <div className="">
                         <p className="text-medium md:text-header-2 font-bold">Contact</p>
                         <div className="pt-4 md:pt-6 text-body-text-1 md:text-medium">
-                            <div className="flex gap-2 items-center">
-                                <img src={Check} alt="" className='w-5' />
+                            <div className="flex gap-4 md:gap-4 items-center">
+                                <Phonecalling className="w-5"></Phonecalling>
                                 <p>BP 6176 Lome-TOGO</p>
                             </div>
-                            <div className="pt-4 md:pt-5 flex gap-2 items-center">
-                                <img src={Check} alt="" className='w-5'  />
+                            <div className="pt-4 md:pt-5 flex gap-2 md:gap-4 items-center">
+                                <Phonecalling className="w-5"></Phonecalling>
                                 <p>+228 22 22 63</p>
                             </div>
-                            <div className="pt-4 md:pt-5 flex gap-2 items-center">
-                                <img src={Check} alt="" className='w-5'  />
+                            <div className="pt-4 md:pt-5 flex gap-2 md:gap-4 items-center">
+                                <Phonecalling className="w-5"></Phonecalling>
                                 <p className='flex flex-col sm:flex-row'>Customerservice<span>@cae.com</span></p>
                             </div>                         
-                            <div className="pt-4 md:pt-5 flex gap-4">
+                            <div className="pt-4 md:pt-5 flex gap-4 md:gap-4">
                                 <a href="#"><WhatsappIcon></WhatsappIcon></a>
                                 <a href="#"><FacebookIcon></FacebookIcon></a>
                                 <a href="#"><TiktokIcon></TiktokIcon></a>

@@ -18,7 +18,7 @@ const About = () => {
       <div className="lg:grid grid-cols-3 gap-20 ">
         <div className=" pt-14 ps-20  hidden lg:block">
           <ImageDecoration style="both">
-              <img src={HomeServices2} className="object-cover aspect-square w-[20rem]" alt="" />
+              <img src={HomeServices2} className="object-cover aspect-square w-[20rem]" alt="Photo of Hopital Prive Autel D’elie" />
           </ImageDecoration>
         </div>
 
