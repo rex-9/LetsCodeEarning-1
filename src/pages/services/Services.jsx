@@ -1,7 +1,9 @@
 const Services = () => {
   return (
-    <main className="pt-main">Welcome to Services</main>
-  )
+    <div>
+
+</div>
+    )
 }
 
 export default Services
