@@ -8,7 +8,16 @@ export default {
   theme: {
     colors: {
       neutral: {
-        100: "#fff",
+        100: "#FFF",
+        200: "#F2F2F2",
+        300: "#ECF2FA",
+        400: "#9D9D9D",
+        500: "#69727D",
+        600: "#5D5D5D",
+        700: "#484647",
+        800: "#282828",
+        900: "#0a0a0a",
+        1000: "#000",
       },
       primary: {
         100: "#F6CCF5",
@@ -35,6 +44,11 @@ export default {
         900: "#021D39",
         1000: "#011326",
         1100: "#010B17",
+        1200: "#132646",
+        1300: "#002F60",
+      },
+      custom: {
+        "meadow-green": "#4ADE80",
       },
     },
     fontFamily: {
@@ -91,21 +105,21 @@ export default {
           letterSpacing: "0.01063rem",
         },
       ],
-      "body-text-1": [
+      "body-1": [
         "0.875rem",
         {
           lineHeight: "normal",
           letterSpacing: "0.00788rem",
         },
       ],
-      "body-text-2": [
+      "body-2": [
         "0.75rem",
         {
           lineHeight: "normal",
           letterSpacing: "0.00525rem",
         },
       ],
-      "small-text": [
+      small: [
         "0.625rem",
         {
           lineHeight: "normal",
@@ -114,9 +128,20 @@ export default {
       ],
     },
     extend: {
+      padding: {
+        wrapper: "118px",
+      },
       objectPosition: {
         "desktop-banner": "35% 39%",
+        // "desktop-banner": "12% 5%",
+
         "mobile-banner": "33% 42%",
+      },
+      backgroundImage: {
+        "hero-pattern":
+          "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/home-photo-1.png')",
+        "footer-pattern":
+          "linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/img/footer.png')",
       },
     },
   },
