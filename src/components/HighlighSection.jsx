@@ -1,12 +1,13 @@
+import { twMerge } from "tailwind-merge";
+
 /* eslint-disable react/prop-types */
 function HighlighSection({ children, className }) {
   return (
     <article
-      className={
-        "flex flex-col px-8 md:gap-20 gap-12 md:py-24 py-6 md:flex-row md:px-12 lg:px-16" +
-        " " +
-        className
-      }
+      className={twMerge(
+        "flex flex-col gap-12 px-8 py-6 md:flex-row md:gap-20 md:px-12 md:py-24 lg:px-16",
+        className,
+      )}
     >
       {children}
     </article>

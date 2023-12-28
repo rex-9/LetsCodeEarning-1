@@ -71,7 +71,7 @@
     }
   }
 }
-@layer utilities {
+@layer utilities { 
   .footer {
     color: rgba(255, 255, 255, 0.56);
   }

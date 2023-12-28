@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Star } from '../../assets';
+import { useState } from "react";
+import { StarIcon } from "../../assets";
 const Inputform = () => {
   const [details, setDetails] = useState({
-    name: '',
-    email: '',
-    number: '',
-    message: '',
+    name: "",
+    email: "",
+    number: "",
+    message: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,58 +15,65 @@ const Inputform = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDeafault();
+    e.preventDefault();
     console.log(details);
   };
   return (
-    <div className='m-7'>
-      <form >
-        <div className=' flex'>
-          <h3 className=' text-body-text-1 font-normal leading-8'>Name</h3>
-         <span className='mt-2 ms-2'> <Star/></span>
+    <div className="m-7">
+      <form>
+        <div className=" flex">
+          <h3 className=" text-body-text-1 font-normal leading-8">Name</h3>
+          <span className="ms-2 mt-2">
+            <StarIcon />
+          </span>
         </div>
         <input
-          type='text'
-          name='name'
-          className='border rounded-lg w-80 h-12 ps-2'
+          type="text"
+          name="name"
+          className="h-12 w-80 rounded-lg border ps-2"
           onChange={handleChange}
         />
-        <div className=' flex'>
-          <h3 className=' text-body-text-1 font-normal leading-8'>
+        <div className=" flex">
+          <h3 className=" text-body-text-1 font-normal leading-8">
             Email Address
           </h3>
-           <span className='mt-2 ms-2'> <Star/></span>
+          <span className="ms-2 mt-2">
+            <StarIcon />
+          </span>
         </div>
         <input
-          type='text'
-          name='email'
-          className='border rounded-lg w-80  h-12 ps-2'
+          type="text"
+          name="email"
+          className="h-12 w-80 rounded-lg  border ps-2"
           onChange={handleChange}
         />
-        <div className='flex'>
-          <h3 className=' text-body-text-1 font-normal leading-8'>
+        <div className="flex">
+          <h3 className=" text-body-text-1 font-normal leading-8">
             Phone Number
           </h3>
-           <span className='mt-2 ms-2'> <Star/></span>
+          <span className="ms-2 mt-2">
+            <StarIcon />
+          </span>
         </div>
         <input
-          type='text'
-          name='number'
-          className='border rounded-lg w-80  h-12 ps-2'
+          type="text"
+          name="number"
+          className="h-12 w-80 rounded-lg  border ps-2"
           onChange={handleChange}
         />
-        <h3 className=' text-body-text-1 font-normal leading-8'>Message</h3>
+        <h3 className=" text-body-text-1 font-normal leading-8">Message</h3>
         <textarea
-          type='text'
-          name='message'
-          className='border rounded-lg w-80  h-32 ps-2'
+          type="text"
+          name="message"
+          className="h-32 w-80 rounded-lg  border ps-2"
           onChange={handleChange}
         />
         <div>
           <button
-            type='submit'
+            type="submit"
             onSubmit={handleSubmit}
-            className='bg-secondary-700 text-neutral-100 w-80 p-2 rounded-lg my-3'>
+            className="my-3 w-80 rounded-lg bg-secondary-700 p-2 text-neutral-100"
+          >
             Send
           </button>
         </div>

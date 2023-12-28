@@ -1,25 +1,21 @@
-import {
-  HomeCenterFiv,
-  HomeAboutUs,
-  HomeWhatWeDo,
-  HomeServices1,
-} from "../assets";
-import { hightLightData } from "../data";
+import { HomeCenterFiv, HomeAboutUs, HomeWhatWeDo } from "../assets";
+import { hightLightData, servicesCardsData } from "../data";
 import CustomNavLink from "../components/CustomNavLink";
 import Button from "../components/Button";
 import Card from "../components/Card";
-import ServicesSection from "../components/ServicesSection";
+import CardsWrapper from "../components/CardsWrapper";
 import HighlighSection from "../components/HighlighSection";
 import HighlightImage from "../components/HighlightImage";
 import HighlightText from "../components/HighlightText";
-import ImageTextOverlay from "../components/ImageTextOverlay";
+import TextOverlay from "../components/TextOverlay";
+import Wrapper from "../layouts/Wrapper";
 
 const Home = () => {
   return (
-    <main className="pt-main">
-      {/* Hero Section */}
-      <ImageTextOverlay>
-        <section className=" mx-auto space-y-4">
+    <Wrapper>
+      {/* Hero Text Overlay */}
+      <TextOverlay>
+        <section className="mx-auto space-y-4">
           <h1 className=" text-header-5 font-bold">BIENVENUE</h1>
           <p className="text-header-5 font-bold">
             HOPITAL PRIVE AUTEL D&apos;ELIE
@@ -33,7 +29,7 @@ const Home = () => {
             <Button>Get In Touch</Button>
           </CustomNavLink>
         </section>
-      </ImageTextOverlay>
+      </TextOverlay>
       {/* First Highlight Section */}
       <HighlighSection>
         <HighlightImage
@@ -68,56 +64,19 @@ const Home = () => {
         />
       </HighlighSection>
       {/* Services Section */}
-      <ServicesSection>
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />{" "}
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />{" "}
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />{" "}
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />
-        <Card
-          intent="home"
-          img={HomeServices1}
-          title="BLOC OPERATOIRE"
-          body="We recruit and deliver our services nationwide, Supporting stuff within all arrears."
-          link="#"
-          imgType="circle"
-        />
-      </ServicesSection>
+      <CardsWrapper className="bg-neutral-300" subheading='true'>
+        {servicesCardsData.home.map(({ title, img, body, link }) => (
+          <Card
+            key={title}
+            img={img}
+            title={title}
+            body={body}
+            link={link}
+            intent="home"
+            imgType="circle"
+          />
+        ))}
+      </CardsWrapper>
       {/* Third Highlight Section */}
       <HighlighSection>
         <HighlightImage
@@ -135,7 +94,8 @@ const Home = () => {
           list={hightLightData.variantTwo}
         />
       </HighlighSection>
-      <ImageTextOverlay pattern="footer">
+      {/* Footer Text Overlay */}
+      <TextOverlay pattern="footer" size="footer">
         <section className="mx-auto space-y-4">
           <h2 className="text-medium font-bold md:text-header-4">
             How can we help you?
@@ -151,8 +111,8 @@ const Home = () => {
             </Button>
           </CustomNavLink>
         </section>
-      </ImageTextOverlay>
-    </main>
+      </TextOverlay>
+    </Wrapper>
   );
 };
 

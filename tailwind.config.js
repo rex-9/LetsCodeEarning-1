@@ -8,12 +8,16 @@ export default {
   theme: {
     colors: {
       neutral: {
-        100: "#fff",
-        200: "#ECF2FA",
-        300: "#9D9D9D",
-        400: "#5D5D5D",
-        500: "#282828",
-        900: "#000",
+        100: "#FFF",
+        200: "#F2F2F2",
+        300: "#ECF2FA",
+        400: "#9D9D9D",
+        500: "#69727D",
+        600: "#5D5D5D",
+        700: "#484647",
+        800: "#282828",
+        900: "#0a0a0a",
+        1000: "#000",
       },
       primary: {
         100: "#F6CCF5",
@@ -40,8 +44,8 @@ export default {
         900: "#021D39",
         1000: "#011326",
         1100: "#010B17",
-        1200:"#132646",
-        1300:"#002F60"
+        1200: "#132646",
+        1300: "#002F60",
       },
       custom: {
         "meadow-green": "#4ADE80",
@@ -125,10 +129,12 @@ export default {
     },
     extend: {
       padding: {
-        main: "108px",
+        wrapper: "118px",
       },
       objectPosition: {
         "desktop-banner": "35% 39%",
+        // "desktop-banner": "12% 5%",
+
         "mobile-banner": "33% 42%",
       },
       backgroundImage: {

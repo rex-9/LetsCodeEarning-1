@@ -1,12 +1,12 @@
-import { Star } from "../../assets";
+/* eslint-disable react/prop-types */
+import { StarIcon } from "../../assets";
 
-Star
 const Inputbox = ({ label, type, value }) => {
   return (
     <div className='flex flex-col'>
       <div className=" flex">
         <label>{label}</label>
-        <span className="ms-2 mt-2"><Star></Star></span>
+        <span className="ms-2 mt-2"><StarIcon /></span>
       </div>
       <input
         type={type}

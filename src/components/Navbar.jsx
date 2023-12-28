@@ -15,12 +15,12 @@ const Navbar = () => {
   const handleMobileNav = () => setMobileNavOpen((prev) => !prev);
   return (
     <nav>
-      <div className="mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between bg-secondary-700 py-3 px-6 md:px-8 md:py-2">
-        <div className="flex flex-col text-small text-neutral-100 md:flex-row md:gap-4 gap-2 md:text-medium">
+      <div className="mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between bg-secondary-700 px-4 py-3 md:px-8 md:py-2">
+        <div className="flex flex-col gap-2 text-small text-neutral-100 md:flex-row md:gap-4 md:text-medium">
           <p className="">Email: info@cae.com</p>
           <p>Phone Number: +228 92 50 78 22</p>
         </div>
-        <ul className="flex items-center sm:gap-4 md:gap-6 gap-4 font-medium rtl:space-x-reverse">
+        <ul className="flex items-center gap-4 font-medium rtl:space-x-reverse sm:gap-4 md:gap-6">
           <CustomNavLink to="#">
             <WhatsappIcon />
           </CustomNavLink>
@@ -32,10 +32,10 @@ const Navbar = () => {
           </CustomNavLink>
         </ul>
       </div>
-      <div className="relative mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between px-6 py-2 md:px-8">
-        <CustomNavLink>
+      <div className="relative mx-auto flex h-auto max-w-screen-2xl flex-wrap items-center justify-between px-4 py-2 md:px-8">
+        <CustomNavLink to="/">
           <img src={Brand} className="h-8 md:h-12" alt="Website Logo" />
-          <p className="flex flex-col self-center whitespace-nowrap text-body-text-1 uppercase md:text-header-1">
+          <p className="text-body-text-1 flex flex-col self-center whitespace-nowrap uppercase md:text-header-1">
             <span>aute d&apos;ele</span>
             <span>hopital prive </span>
           </p>
@@ -65,19 +65,17 @@ const Navbar = () => {
             (mobileNavOpen ? " flex" : " hidden")
           }
         >
-          <ul className="fixed inset-0 left-1/4 flex flex-col space-y-4 bg-neutral-100 px-8 py-36 text-center text-header-2 shadow-xl rtl:space-x-reverse md:relative md:left-0 md:mt-0 md:w-auto md:flex-row md:space-x-8 md:space-y-0 md:border-0 md:bg-neutral-100 md:p-0 md:text-medium md:shadow-none">
-            <CustomNavLink onClick={handleMobileNav} to="/">
-              Home
-            </CustomNavLink>
-            <CustomNavLink onClick={handleMobileNav} to="/services">
-              Services
-            </CustomNavLink>
-            <CustomNavLink onClick={handleMobileNav} to="/about">
-              About
-            </CustomNavLink>
-            <CustomNavLink onClick={handleMobileNav} to="/contact">
-              Contact
-            </CustomNavLink>
+          <ul className="fixed inset-0 left-1/4 flex flex-col space-y-4 bg-neutral-100 px-8 py-36 text-center text-header-2 opacity-90 shadow-xl rtl:space-x-reverse md:relative md:left-0 md:mt-0 md:w-auto md:flex-row md:space-x-8 md:space-y-0 md:border-0 md:p-0 md:text-medium md:shadow-none">
+            {[
+              ["Home", "/"],
+              ["Services", "/services"],
+              ["About", "/about"],
+              ["Contact", "/contact"],
+            ].map(([title, url]) => (
+              <CustomNavLink key={title} onClick={handleMobileNav} to={url}>
+                {title}
+              </CustomNavLink>
+            ))}
           </ul>
         </div>
       </div>

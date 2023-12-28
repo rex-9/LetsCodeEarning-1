@@ -1,18 +1,16 @@
-import React from 'react';
-
+/* eslint-disable react/prop-types */
 const GenderDropdown = ({ selectedGender, onGenderChange }) => {
-    
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col">
       <label>Gender</label>
       <select
         value={selectedGender}
         onChange={(e) => onGenderChange(e.target.value)}
-        className='border rounded-lg w-80 h-12 ps-2'
+        className="h-12 w-80 rounded-lg border ps-2"
       >
-        <option value='male'>Male</option>
-        <option value='female'>Female</option>
-        <option value='other'>Other</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
       </select>
     </div>
   );
@@ -20,13 +18,13 @@ const GenderDropdown = ({ selectedGender, onGenderChange }) => {
 
 const DateDropdown = ({ selectedDate, onDateChange }) => {
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col">
       <label>Date</label>
       <input
-        type='date'
+        type="date"
         value={selectedDate}
         onChange={(e) => onDateChange(e.target.value)}
-        className='border rounded-lg w-80 h-12 ps-2'
+        className="h-12 w-80 rounded-lg border ps-2"
       />
     </div>
   );

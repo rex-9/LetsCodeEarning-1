@@ -10,9 +10,9 @@ const buttonVariants = cva(
         default:
           "bg-secondary-700 focus:ring-secondary-100 rounded md:rounded-md focus:ring-4",
         transparent:
-          "bg-transparent border border-neutral-100 focus:ring-neutral-900 rounded-md focus:ring-4",
+          "bg-transparent border border-neutral-100 focus:ring-neutral-900 rounded-md focus:ring-2",
         form: "bg-primary-600 focus:bg-primary-100 rounded md:rounded-md focus:ring-4",
-        icon: "border-2 border-custom-meadow-green text-primary-1100 focus:ring-neutral-100 rounded-md focus:ring-4",
+        icon: "border-2 border-custom-meadow-green text-primary-1100 focus:ring-neutral-100 rounded-md focus:ring-1",
         nav: "z-50 h-10 w-10 items-center justify-center focus:outline-none focus:ring-2 focus:ring-secondary-700 md:hidden ",
       },
       size: {
