@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const Checkbox = ({ label }) => {
+const Checkbox = ({ name, value, label }) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = () => {
@@ -13,9 +13,11 @@ const Checkbox = ({ label }) => {
     <label className="flex cursor-pointer items-center  space-x-2">
       <input
         type="checkbox"
-        className="hidden"
+        name={name}
         checked={isChecked}
+        className="hidden"
         onChange={handleCheckboxChange}
+        value={value}
       />
       <div
         className={`border-gray-300 h-5 w-5 rounded-full  border ${

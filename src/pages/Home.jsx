@@ -1,14 +1,15 @@
+import { HashLink } from "react-router-hash-link";
 import { HomeCenterFiv, HomeAboutUs, HomeWhatWeDo } from "../assets";
 import { hightLightData, servicesCardsData } from "../data";
+import Wrapper from "../layouts/Wrapper";
 import CustomNavLink from "../components/CustomNavLink";
-import Button from "../components/Button";
-import Card from "../components/Card";
-import CardsWrapper from "../components/CardsWrapper";
 import HighlighSection from "../components/HighlighSection";
 import HighlightImage from "../components/HighlightImage";
 import HighlightText from "../components/HighlightText";
 import TextOverlay from "../components/TextOverlay";
-import Wrapper from "../layouts/Wrapper";
+import CardsWrapper from "../components/CardsWrapper";
+import Card from "../components/Card";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -25,8 +26,18 @@ const Home = () => {
             notre priorité absolue. Nous sommes prêts à vous aider dans vos
             consultations médicales.
           </p>
-          <CustomNavLink className="mx-auto">
-            <Button>Get In Touch</Button>
+          <CustomNavLink>
+            <HashLink
+              to="/contact#contactForm"
+              scroll={(el) => {
+                const yOffset = -100;
+                const y =
+                  el.getBoundingClientRect().top + window.scrollY + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }}
+            >
+              <Button>Get In Touch</Button>
+            </HashLink>
           </CustomNavLink>
         </section>
       </TextOverlay>
@@ -64,7 +75,7 @@ const Home = () => {
         />
       </HighlighSection>
       {/* Services Section */}
-      <CardsWrapper className="bg-neutral-300" subheading='true'>
+      <CardsWrapper className="bg-neutral-300" subheading="true">
         {servicesCardsData.home.map(({ title, img, body, link }) => (
           <Card
             key={title}

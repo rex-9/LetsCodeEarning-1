@@ -33,9 +33,9 @@ const Contact = () => {
         />
       </HighlighSection>
 
-      <Schedule></Schedule>
+      <Schedule />
       {/* form section */}
-      <div className="mt-10 flex flex-col  gap-1 bg-neutral-100 font-NunitoSans md:flex-row">
+      <div id="contactForm" className="mt-10 flex flex-col gap-1 bg-neutral-100 font-NunitoSans md:flex-row">
         <div className="md:w-1/2">
           <div className="pe-8 ps-8 pt-20 lg:ps-60">
             <h1 className=" text-header-3 font-bold text-secondary-600 md:text-header-4">
@@ -54,10 +54,10 @@ const Contact = () => {
         </div>
 
         <div className="mt-3 flex md:w-1/2">
-          <Inputform></Inputform>
+          <Inputform />
         </div>
       </div>
-      <Address></Address>
+      <Address/>
     </Wrapper>
   );
 };

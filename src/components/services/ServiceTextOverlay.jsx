@@ -10,7 +10,7 @@ function ServiceTextOverlay({ img, href, heading }) {
       <img
         src={img}
         alt=""
-        className="-z-2 col-span-full row-span-full h-full w-full object-cover"
+        className="-z-2 col-span-full row-span-full h-[28rem] w-full object-cover md:h-96"
       />
       <div className="-z-0 col-span-full row-span-full flex flex-col px-6 pb-16 pt-8 font-NunitoSans md:px-12 md:pb-12 md:pt-6">
         <ul className="-z-0 flex gap-3">

@@ -1,31 +1,41 @@
 /* eslint-disable react/prop-types */
-const GenderDropdown = ({ selectedGender, onGenderChange }) => {
+import { useState } from "react";
+
+const GenderDropdown = ({ name }) => {
+  const [selectedGender, setSelectedGender] = useState("");
   return (
     <div className="flex flex-col">
-      <label>Gender</label>
+      <label htmlFor={name}>Gender</label>
       <select
-        value={selectedGender}
-        onChange={(e) => onGenderChange(e.target.value)}
+        onChange={(e) => setSelectedGender(e.target.value)}
         className="h-12 w-80 rounded-lg border ps-2"
+        required
       >
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
+        <option value="" className="pb-3">Please Choose an option</option>
+        <hr />
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Prefer not to say">Prefer not to say</option>
       </select>
+      <input type="hidden" name={name} value={selectedGender} />
     </div>
   );
 };
 
-const DateDropdown = ({ selectedDate, onDateChange }) => {
+const DateDropdown = ({ name }) => {
+  const currentDate = new Date().toISOString().split("T")[0];
+  const [selectedDate, setSelectedDate] = useState(currentDate);
+  console.log(selectedDate);
   return (
     <div className="flex flex-col">
       <label>Date</label>
       <input
         type="date"
-        value={selectedDate}
-        onChange={(e) => onDateChange(e.target.value)}
+        onChange={(e) => setSelectedDate(e.target.value)}
         className="h-12 w-80 rounded-lg border ps-2"
+        value={selectedDate}
       />
+      <input type="hidden" name={name} value={selectedDate} />
     </div>
   );
 };

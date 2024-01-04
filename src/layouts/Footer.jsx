@@ -59,7 +59,9 @@ const Footer = () => {
                   <div className="flex items-center justify-center gap-2 md:gap-4">
                     <EmailIcon stroke="#fff" className=" shrink-0" />
                     <p className="flex flex-col sm:flex-row">
-                      Customerservice@cae.com
+                      Customerservice
+                      <br className="md:hidden" />
+                      @cae.com
                     </p>
                   </div>
                   <div className="flex gap-4 md:gap-4">
