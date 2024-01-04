@@ -18,7 +18,7 @@ const Inputform = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://formspree.io/", {
+      const response = await fetch("https://formspree.io/f/xkndnqar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
